@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoUp</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <a href="{% url 'index' %}">
+                <h1>CryptoUp</h1>
+                <img src="" alt="">
+            </a>
+            
+            <div class="nav-link">
+                <ul>
+                    <li>
+                        <a href="{% url 'programs' %}">Programs</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact_form' %}">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'our_goals' %}">Our goals</a>
+                    </li>
+        
+                </ul>    
+            </div>
+       </nav>
+    </header>
+
+
+    <main>
+        <section class="block-1">
+
+            <h1>Trade Smart,<br>Grow Fast.</h1>
+            <a href="https://youtu.be/r6iMGxOg6wQ?si=a0KPIwQjwxPyXLRE"> WATCH VIDEO</a>
+
+        </section>
+
+        <section class="block-2">
+
+            <div class="inf-2">
+
+                <h1>CryptoUp</h1>
+
+                <p>CryptoUp is an interactive educational platform that immerses users in<br> the world of cryptocurrency trading and mining through our unique<br> simulation, Crypto Tycoon. Our platform is designed to help users<br> understand how crypto markets work, how mining farms operate, and how to<br> optimize crypto investments—all in a risk-free environment.<br><br>By engaging with our simulations and educational content, users can<br> develop essential skills in crypto trading, mining operations, and<br> market analysis. Whether you're a beginner exploring the fundamentals or<br> an aspiring trader looking to refine your strategies, CryptoUp provides<br> a hands-on learning experience.<br><br>      Join us today and take your first step into the world of crypto finance—<br>where knowledge turns into potential success!</p>
+            </div>
+        
+        </section>
+    
+        <section class="block-3">
+            
+            <div class="inf-3">
+                
+                <h1>USER-FRIENDLY CRYPTO EDUCATION PLATFORM</h1>
+                
+                <p>CryptoUp offers an innovative platform designed to teach users how to manage mining<br> farms, trade cryptocurrencies, and analyze market trends. We provide a realistic<br> simulation, allowing users to practice in real-world conditions without financial<br> risks.<br>
+                    On the CryptoUp platform, you can learn about cryptocurrency mining, investment<br> strategies, and trading while gradually improving your skills.<br>
+                    We also integrate advanced market analysis technologies and automated trading<br> strategies, enabling users to master the most relevant methods for working with<br> cryptocurrencies.
+                    <br><br><br>
+                    🔹 Full-fledged simulation of the real crypto market<br>
+                    🔹 Learning through practice with elements of gamification<br>
+                    🔹 Interactive mining farm management system</p>
+            
+            </div>
+        
+        </section>  
+    
+
+        <section class="block-4">
+            
+            <h1>CRYPTOUP SPECIFICATIONS</h1>
+            
+            <P>We provide a unique platform for learning and simulating cryptocurrency trading and mining.</P>
+
+            <div class="inf-4">
+
+                <div class="inf-4-1">
+                   <P>Full immersion in the crypto market<br><br> Learn to work with crypto<br> exchanges, analyze trends, and<br> make strategic decisions without<br> the risk of losing real money.</P>
+                   <p style="padding-left: 3%;">Understanding cryptocurrencies and their mechanics<br><br> Discover how each cryptocurrency operates,<br> how blockchains work, and what factors<br> influence the price of digital assets.</p>
+                   <p>Mining farm simulation<br><br> Dive into the process of cryptocurrency mining—<br>manage farms, optimize energy consumption, and<br> increase profitability.</p>
+                </div>
+
+                <div class="inf-4-2">
+                   <P >In-depth hardware analysis<br><br> Understand how each device in a mining<br> farm works, from GPUs to specialized ASIC<br> miners.</P>
+                   <p>Learn at your own pace<br><br> Master trading and mining without<br> time limits. Progress to new learning<br> stages when you're ready.</p>
+                   <p>Complete control over virtual capital<br><br> Learn to effectively allocate assets, execute<br> trades, and analyze the profitability of your<br>
+                </div>
+       
+            </div>
+        </section>
+    
+
+        <section class="block-5">
+
+            <div class="inf-5">
+                <h1>Start right now!</h1>
+                <a href="https://play.google.com/store/apps/details?id=com.DetlayGames.CryptoTycoon&hl=ru&pli=1"><button class="regButton2">DOWLANG HERE</button></a>
+            </div>
+
+            <iframe src="https://s3.eponesh.com/games/draft/11672/v1/" width="800px" height="500px"></iframe> 
+        </section>
+    
+    </main>
+
+    <button id="scrollBtn">⬇</button>
+
+</body>
+
+<script> 
+    window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        scrollBtn.innerHTML = "⬆";
+        scrollBtn.style.background = "#f44336";
+        scrollBtn.onclick = () =>
+            window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+        scrollBtn.innerHTML = "⬇";
+        scrollBtn.style.background = "#4CAF50";
+        scrollBtn.onclick = () =>
+            window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    }
+});
+</script>
+
+
+</html>

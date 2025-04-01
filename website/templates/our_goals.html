@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our goals</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            
+            <a href="{% url 'index' %}">
+                <h1>CryptoUp</h1>
+                <img src="./image/image (1).png" alt="">
+            </a>
+            
+            <div class="nav-link">
+                <ul>
+                    <li>
+                        <a href="{% url 'programs' %}">Programs</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact_form' %}">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'our_goals' %}">Our goals</a>
+                    </li>
+        
+                </ul>    
+            </div>
+       </nav>
+    </header>
+
+
+    <main>
+
+        <section class="our_goals">
+
+        <div class="inf-our">
+            
+            <h1>CRYPTOUP – YOUR GATEWAY TO CRYPTO KNOWLEDGE</h1>
+            <p>Our platform is designed to teach users the key aspects of working with cryptocurrencies, including:</p>
+        
+        </div>
+        
+        <div class="inf-our-2">
+            
+            <p style="padding-right: 60%;">Crypto Market Trends – Learn to analyze price<br> movements, market factors, and forecast trends<br>s for better decision-making.</p>
+            <p style="padding-left: 60%;margin-top: -4%;">Building Mining Farms – From selecting<br> the right equipment to configuring and<br> optimizing mining operations.</p>
+            <p style="padding-top: 10%;">Crypto Transactions – Master buying, selling, exchanging, storing, and<br> securing digital assets.</p>
+            <p style="padding-top: 10%;">We aim to make the world of cryptocurrency accessible and understandable for everyone, helping users gain practical skills and apply them<br> effectively!</p>
+        
+        
+        </section>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </main>
+
+
+</body>

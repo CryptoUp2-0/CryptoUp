@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMS</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <a href="{% url 'index' %}">
+                <h1>CryptoUp</h1>
+                <img src="./image/image (1).png" alt="">
+            </a>
+            
+            <div class="nav-link">
+                <ul>
+                    <li>
+                        <a href="{% url 'programs' %}">Programs</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact_form' %}">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'our_goals' %}">Our goals</a>
+                    </li>
+        
+                </ul>    
+            </div>
+       </nav>
+    </header>
+
+    <main>
+
+        <section class="programs">
+
+            <h1>Play,Learn,Earn</h1>
+
+            <p>Enhance your cryptocurrency expertise with our free tools, interactive simulations, expert mentorship, virtual courses, in-depth<br> guides, and more!</p>
+
+            <div class="inf-p">
+                <div class="inf-p-1">
+                    <h2>LEARN CRYPTO</h2>
+                    <p>Expand your knowledge of cryptocurrency, blockchain, and<br> mining with interactive lessons and simulations.</p>
+
+                </div>
+                <h1>+</h1>
+                <div class="inf-p-2">
+                    <h2>STRATEGY</h2>
+                    <p>Test your skills in risk management, market<br> analysis, and mining optimization. Develop<br> strategies for success!</p>
+                </div>
+                <h1>=</h1>
+                <div class="inf-p-3">
+                    <h2>MASTER CRYPTO TRADING</h2>
+                    <p>Apply your expertise to manage virtual assets,<br> optimize mining farms, and simulate real crypto<br> market conditions!</p>
+                </div>
+            </div>
+        
+        </section>
+
+
+    </main>
+
+</body>
+</html>

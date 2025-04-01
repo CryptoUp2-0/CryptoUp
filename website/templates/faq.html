@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <a href="{% url 'index' %}">
+                <h1>CryptoUp</h1>
+                <img src="./image/image (1).png" alt="">
+            </a>
+            
+            <div class="nav-link">
+                <ul>
+                    <li>
+                        <a href="{% url 'programs' %}">Programs</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact_form' %}">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'our_goals' %}">Our goals</a>
+                    </li>
+        
+                </ul>    
+            </div>
+       </nav>
+    </header>
+
+    <main>
+        <div class="form" >
+            <h2>CONTACT WITH US</h2>
+            <form method="POST" id="form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Send" id="submit">
+            </form>
+            
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,317 @@
+* {
+    margin: 0 0;
+    color: white;
+}
+
+body {
+    background-image: url(./image/WhatsApp\ Image\ 2025-03-15\ at\ 18.07.04\ \(4\).jpeg);
+}
+
+header img {
+    width: 6%;
+    display: inline;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(30, 28, 28);
+}
+
+header h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px ;
+    display: inline;
+    margin-left: 4%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: inline;
+}
+
+.nav-link {
+    padding-top: 1.5%;
+    margin-right: 100px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;   
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li{
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-break: strict;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+nav ul li:after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 157, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+.block-1 {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding-top: 15%;
+    background-image: url(./image/WhatsApp\ Image\ 2025-03-15\ at\ 18.07.04.jpeg);
+    background-repeat: no-repeat;
+}
+
+.block-1 h1 {
+    color: white;
+    font-size: 60px;
+    font-family: Andale Mono, monospace;
+    padding-bottom: 5%;
+}
+
+.block-1 a{
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.block-2 {
+    width: 100%;
+    height: 750px;
+    background-image: url(./image/WhatsApp\ Image\ 2025-03-15\ at\ 18.07.04\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.inf-2 {
+    margin-left: 50%;
+    padding-top: 5%;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.block-2 h1 {
+    padding-bottom: 10%;
+}
+
+.inf-3{
+    margin-right: 40%;
+    padding-top: 10%;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.block-3 h1 {
+    padding-bottom: 10%;
+}
+
+
+.block-3 {
+    width: 100%;
+    height: 830px;
+    background-image: url(./image/WhatsApp\ Image\ 2025-03-15\ at\ 18.07.04\ \(2\).jpeg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.block-4 {
+    width: 100%;
+    height: 800px;
+    background-image: url(./image/WhatsApp\ Image\ 2025-03-15\ at\ 18.07.04\ \(3\).jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: monospace; 
+}
+
+.inf-4-1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.inf-4-1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-family: monospace;
+    font-size: 15px;
+    margin-top: 5%;
+}
+.inf-4-2 {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-family: monospace;
+    font-size: 15px;
+    margin-top: 13%;
+}
+
+.block-4 h1 {
+    color: white;
+    font-family: Andale Mono, monospace;
+    padding-bottom: 2%;
+}
+
+
+.block-5 h1 {
+    color: white;
+    font-family: Andale Mono, monospace;
+    font-size: 40px;
+    padding-bottom: 5%;
+}
+.regButton2{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    padding: 15px 55px;
+    cursor: pointer;
+    font-family: fantasy;
+    background-color: #28ee00;
+    font-weight: 100;
+    font-size: 15px;
+    border-radius: 5%;
+}
+.regButton2:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(7, 7, 7, 0.329);
+    background-color: #2bff0082;
+    transition: 0.5s;
+}
+
+.block-5 {
+    width: 100%;
+    height: 850px;
+    background-image: url(./image/WhatsApp\ Image\ 2025-03-15\ at\ 18.07.04\ \(4\).jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: monospace; 
+}
+
+iframe {
+    margin-top: 5%;
+}
+
+.programs {
+    text-align: center;
+    font-family: monospace;
+}
+
+.programs h1 {
+    font-size: 40px;
+    font-weight: 100;
+    padding-top: 3%;
+}
+
+.programs p {
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 1%;
+}
+
+#scrollBtn {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    padding: 15px;
+    font-size: 15px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.inf-p {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
+}
+
+.inf-p h2 {
+    padding-top: 5%;
+}
+
+.form{
+    width: 600px;
+    margin: 80px auto;
+    text-align: center;} 
+#form{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 5%;
+    font-family: monospace;
+    border-color:  rgb(0, 0, 0);
+} 
+
+#submit {
+    background-color: rgb(255, 204, 0);
+    color: black;
+    font-family: monospace;
+    font-weight: 700;
+    width: 100px;
+    height: 30px;
+}
+
+#submit:hover {
+    background-color: rgba(255, 204, 0, 0.571);
+    color: rgba(0, 0, 0, 0.737);
+    border-color: rgba(255, 255, 255, 0.388);
+}
+
+.form h2 {
+    padding-bottom: 10%;
+}
+
+.our_goals {
+    text-align: center;
+}
+
+.inf-our h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: Andale Mono, monospace;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+
+.inf-our p {
+    color: white;
+    font-size: 20px;
+    font-family: Andale Mono, monospace;
+}
+
+.inf-our-2 {
+    padding-top: 5%;
+}
+
+.inf-our-2 p{
+    color: white;
+    font-size: 17px;
+    font-family: Andale Mono, monospace;
+}
