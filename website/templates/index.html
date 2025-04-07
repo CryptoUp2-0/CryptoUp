@@ -1,11 +1,15 @@
 {% load static %}
+{% load widget_tweaks %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoUp</title>
-    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -13,7 +17,7 @@
             
             <a href="{% url 'index' %}">
                 <h1>CryptoUp</h1>
-                <img src="" alt="">
+                <img src="{% static 'website/image/image (1).png' %}" alt="">
             </a>
             
             <div class="nav-link">
@@ -76,7 +80,7 @@
             
             <h1>CRYPTOUP SPECIFICATIONS</h1>
             
-            <P>We provide a unique platform for learning and simulating cryptocurrency trading and mining.</P>
+
 
             <div class="inf-4">
 
@@ -105,6 +109,79 @@
 
             <iframe src="https://s3.eponesh.com/games/draft/11672/v1/" width="800px" height="500px"></iframe> 
         </section>
+
+        <footer>
+
+            <h1>Detlay Games</h1>
+
+            
+            <div class="footer-nav">
+            <a href="https://x.com/DetlayGames">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+              </svg>
+            </a>
+
+            <a href="https://www.tiktok.com/@detlay.games?lang=ru-RU">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                  </svg>
+            </a>
+
+            <a href="https://discord.gg/6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                  </svg>
+            </a>
+       
+            <a href="https://www.youtube.com/@DetlayGamesOffical">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                  </svg>
+            </a>
+
+            <a href="https://t.me/DetlayDev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                  </svg>
+            </a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.DetlayGames.CryptoTycoon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+            </svg>
+
+            </a>
+            </div>
+
+            <div class="container mt-5 mb-5">
+                <h2 class="text-light">Feedback</h2>
+              
+                <form method="post" class="bg-dark p-4 rounded shadow">
+                  {% csrf_token %}
+              
+                  <div class="mb-3">
+                    <label for="id_name" class="form-label text-light">Name:</label>
+                    {{ form.name|add_class:"form-control" }}
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="id_email" class="form-label text-light">Email:</label>
+                    {{ form.email|add_class:"form-control" }}
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="id_message" class="form-label text-light">Message:</label>
+                    {{ form.message|add_class:"form-control" }}
+                  </div>
+              
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+              </div>
+            </div>
+            <p>© 2024 RushLine, Все права защищены.</p>
+        
+        </footer>
     
     </main>
 
@@ -116,12 +193,12 @@
     window.addEventListener("scroll", () => {
     if (window.scrollY > 100) {
         scrollBtn.innerHTML = "⬆";
-        scrollBtn.style.background = "#f44336";
+        scrollBtn.style.background = "rgb(255, 157, 0)";
         scrollBtn.onclick = () =>
             window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
         scrollBtn.innerHTML = "⬇";
-        scrollBtn.style.background = "#4CAF50";
+        scrollBtn.style.background = "rgb(255, 157, 0)";
         scrollBtn.onclick = () =>
             window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     }

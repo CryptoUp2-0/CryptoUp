@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="stylesheet" href="{% static 'website/style.css' %}">
+    <style>
+        form {
+            max-width: 700px;
+            margin: 10px auto;
+            padding: 50px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
@@ -13,7 +24,7 @@
             
             <a href="{% url 'index' %}">
                 <h1>CryptoUp</h1>
-                <img src="./image/image (1).png" alt="">
+                <img src="{% static 'website/image/image (1).png' %}" alt="">
             </a>
             
             <div class="nav-link">
@@ -43,6 +54,7 @@
             </form>
             
         </div>
+
     </main>
 </body>
 </html>
