@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'website',  # добавили приложение
     'rest_framework',  # Подключаем DRF
     'widget_tweaks',
-
+    
 ]
 
 
@@ -141,3 +141,4 @@ MESSAGE_TAGS = {
     messages.WARNING: 'warning',
     messages.ERROR: 'danger',
 }
+

@@ -1,68 +1,47 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROGRAMS</title>
-    <link rel="stylesheet" href="{% static 'website/style.css' %}">
-</head>
-<body>
-    <header>
-        <nav>
-            
-            <a href="{% url 'index' %}">
-                <h1>CryptoUp</h1>
-                <img src="{% static 'website/image/image (1).png' %}" alt="">
-            </a>
-            
-            <div class="nav-link">
-                <ul>
-                    <li>
-                        <a href="{% url 'programs' %}">Programs</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'contact_form' %}">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'our_goals' %}">Our goals</a>
-                    </li>
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <!-- Существующий контент программ -->
+            <h1>Наши программы</h1>
+            ...
+        </div>
         
-                </ul>    
-            </div>
-       </nav>
-    </header>
-
-    <main>
-
-        <section class="programs">
-
-            <h1>Play,Learn,Earn</h1>
-
-            <p>Enhance your cryptocurrency expertise with our free tools, interactive simulations, expert mentorship, virtual courses, in-depth<br> guides, and more!</p>
-
-            <div class="inf-p">
-                <div class="inf-p-1">
-                    <h2>LEARN CRYPTO</h2>
-                    <p>Expand your knowledge of cryptocurrency, blockchain, and<br> mining with interactive lessons and simulations.</p>
-
+        <div class="col-md-4">
+            {% if not user.is_authenticated %}
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Создать аккаунт</h4>
                 </div>
-                <h1>+</h1>
-                <div class="inf-p-2">
-                    <h2>STRATEGY</h2>
-                    <p>Test your skills in risk management, market<br> analysis, and mining optimization. Develop<br> strategies for success!</p>
-                </div>
-                <h1>=</h1>
-                <div class="inf-p-3">
-                    <h2>MASTER CRYPTO TRADING</h2>
-                    <p>Apply your expertise to manage virtual assets,<br> optimize mining farms, and simulate real crypto<br> market conditions!</p>
+                <div class="card-body">
+                    <form method="post" action="{% url 'register' %}">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <button type="submit" class="btn btn-primary w-100 mt-3">
+                            Зарегистрироваться
+                        </button>
+                    </form>
+                    <div class="mt-3 text-center">
+                        Уже есть аккаунт? <a href="{% url 'login' %}">Войти</a>
+                    </div>
                 </div>
             </div>
-        
-        </section>
-
-
-    </main>
-
-</body>
-</html>
+            {% else %}
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0">Вы вошли как {{ user.username }}</h4>
+                </div>
+                <div class="card-body text-center">
+                    <a href="{% url 'logout' %}" class="btn btn-outline-danger">
+                        Выйти
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
