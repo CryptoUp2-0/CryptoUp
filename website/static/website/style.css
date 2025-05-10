@@ -350,3 +350,59 @@ footer h1 {
 footer p {
     padding-top: 5%;
 }
+
+
+
+/* course-specific styles */
+.course-container {
+    padding: 2rem 10%;
+}
+
+.course-hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(70deg, #1a1a1a, #2d2d2d);
+    color: white;
+}
+
+.course-modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.module-card {
+    background: linear-gradient(30deg, #1a1a1a, #2d2d2d);
+    padding: 2rem;  
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #ff9d00;
+}
+
+.start-module {
+    background: #ff9d00;
+    color: white;
+    border: none;
+    padding: 0.8rem 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.course-features {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}   
+
